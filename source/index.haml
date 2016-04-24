@@ -2,10 +2,30 @@
 layout: default
 ---
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-jekyll">Let's get started</a>
-      building your prototype.
+%main.home
+	%section.intro.parallax-window(data-parallax="scroll" data-image-src="assets/images/boston-skyline.jpg")
+		%h1 Hi, I'm Kyle.
+		%h3 UX Designer, Developer
+		%a(href='#about') 
+			%button See More
+	%section.about#about
+		%p I'm a designer and developer living in Boston. I have been building web and mobile apps for startups for over 6 years. And, designing and developing brands for companies of all sizes for almost 15 years. I think it's vital for UX designers to be proficient in code, so I spend a lot of time expanding my horizons in CSS and JavaScript.
+	%section.latest(data-parallax="scroll" data-image-src="assets/images/everquote-bg.jpg")
+		%h2 Latest Work
+		%img(src="assets/images/everquote-desktop-mockup.png")
+		%h3
+			%a(href='http://everquote.com') EverQuote
+		%p Where I work! Brought in as the sole UX designer and developer, now lead a UX team of 7. See details and view more sites below. 
+		%a(href='#') 
+			%button View Sites
+	%section.contact
+		%h3 Contact Me
+		%ul
+			%li
+				%a(href='http://twitter.com/kylepfeeley') Twitter
+			%li
+				%a(href='https://github.com/kylepfeeley') Github
+			%li
+				%a(href='mailto:me@kylepfeeley.com') Email
+
+

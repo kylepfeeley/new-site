@@ -2,25 +2,25 @@
 button {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
-  background-color: $action-color;
+  background-color: transparent;
   border-radius: $base-border-radius;
-  border: none;
-  color: #fff;
+  border: 1px solid $gray-light;
+  color: $gray-light;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: 125%;
   font-weight: 600;
   line-height: 1;
+  outline: none;
   padding: 0.75em 1em;
   text-decoration: none;
-  user-select: none;
+  @include user-select(none);
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
     color: #fff;
   }
 
