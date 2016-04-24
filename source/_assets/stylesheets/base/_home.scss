@@ -1,61 +1,99 @@
 main.home {
 	section {
+	  align-items: center;
 	  display: flex;
 	  flex-direction: column;
-	  align-items: center;
 	  justify-content: center;
 	  padding: 0 20px;
 
 
 	  img {
-	  	width: 100%;
 	  	height: auto;
 	  	max-width: 500px;
+	  	width: 100%;
 	  }
 	}
 
 	section.intro {
-		height: 100vh;
 		background-color: transparent;
 		color: $gray-light;
+		height: 100vh;
 
 		a {
 			display: block;
+
+			&:active,
+			&:focus,
+			&:hover {
+				button {
+					border-color: darken($gray-light, 15%);
+					color: darken($gray-light, 15%);
+				}
+			}
+		
 		}
 
 		button {
-			position: absolute;
 			bottom: 30px;
-			margin-left: -75px;
-			text-shadow: 1px 1px 2px $gray-darker;
 			box-shadow: 1px 1px 2px $gray-darker;
+			margin-left: -75px;
+			position: absolute;
+			text-shadow: 1px 1px 2px $gray-darker;
 		}
 
-		h1, h3 {
+		ul {
+			@include media(769px) {
+			  left: 30px;
+			  position: absolute;
+			  top: 30px;
+			}
+		}
+
+		h1, h3, p {
 			margin: 0;
 			text-shadow: 1px 1px 2px $gray-darker;
+		}
+
+		li {
+			display: inline-block;
+			font-size: 80%;
+			margin-top: 10px;
+			text-align: center;
+			width: 60px;
+
+			a {
+				color: $gray-medium;
+
+				&:active,
+				&:focus,
+				&:hover {
+				  color: darken($gray-light, 20%);
+				}
+			}
 		}
 	}
 
 	section.about {
 
 		height: 50vh;
-		padding: 50px 10px;
+		max-width: 800px;
+		padding: 50px 20px;
 
 		p {
-			font-size: 125%;
-			max-width: 800px;
+			@include media(769px) {
+				font-size: 125%;
+			}
 		}
 	}
 
 	section.latest {
-		height: 100vh;
 		background-color: transparent;
 		color: $gray-light;
+		height: 100vh;
 
 		button {
-			text-shadow: 1px 1px 2px $blue-darker;
 			box-shadow: 1px 1px 2px $blue-darker;
+			text-shadow: 1px 1px 2px $blue-darker;
 		}
 
 		h2, h3, p {
@@ -64,14 +102,16 @@ main.home {
 
 		h2, h3, a, p {
 			color: $gray-light;
-			text-shadow: 1px 1px 2px $blue-darker;
 			max-width: 800px;
+			text-shadow: 1px 1px 2px $blue-darker;
 		}
 	}
 
 	section.contact {
 		li {
 			display: inline-block;
+			text-align: center;
+			width: 80px;
 		}
 	}
 }

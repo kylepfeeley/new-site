@@ -1,20 +1,136 @@
+// Icon Font
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?ef11uh');
+    src:    url('fonts/icomoon.eot?ef11uh#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?ef11uh') format('truetype'),
+        url('fonts/icomoon.woff?ef11uh') format('woff'),
+        url('fonts/icomoon.svg?ef11uh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    display: block;
+    font-family: 'icomoon' !important;
+    font-size: 200%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    position: relative;
+
+    &:hover .inner {
+        opacity: 1;
+        visibility: visible; 
+        top: 120%; 
+        &:before {
+          visibility: visible;
+          transition: .25s linear;
+          transform: translate(-50%, -50%) scale(1); 
+          transition: .7s linear;
+        }
+      }
+      .inner { 
+        left: 50%; 
+        top: 100%;
+        transform: translateX(-50%);
+        &:before {
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(.1);
+        }
+      }
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.inner {
+  font-family: $base-font-family;
+  padding: 8px;
+  border-radius: $base-border-radius;
+  overflow: hidden;
+  color: #E6E6E6;
+  font-size: 40%;
+  white-space: nowrap;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: .1s linear;
+  pointer-events: none;
+  z-index: 5;
+  &:before {
+    content: '';
+    background-color: #323232;
+    height: 500px;
+    width: 500px;
+    border-radius: $base-border-radius;
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;     
+    transition: .3s linear, transform 0s .3s linear;
+  }
+}
+
+.icon-github:before {
+    content: "\f113";
+}
+.icon-email:before {
+    content: "\e900";
+}
+.icon-work:before {
+    content: "\ec03";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+.icon-dribbble:before {
+    content: "\e903";
+}
+
+
 body {
-  @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
+  @include font-feature-settings("kern", "liga", "pnum");
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
 
+h1, h2, h3, h4, h5 , h6 {
+  font-weight: $normal;
+}
+
 h1, {
-  font-size: 250%;
+
+  font-size: 175%;
+
+  @include media(769px) {
+    font-size: 250%;
+  }
 }
 h2, {
-  font-size: 200%;
+
+  font-size: 150%;
+
+  @include media(769px) {
+    font-size: 200%;
+  }
 }
 h3, {
-  font-size: 150%;
+
+  font-size: 125%;
+
+  @include media(769px) {
+    font-size: 150%;
+  }
 }
 h4,
 h5,
