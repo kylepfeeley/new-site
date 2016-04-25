@@ -78,6 +78,22 @@
   }
 }
 
+.icon-glasses:before {
+  content: "\ec26";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-home:before {
+  content: "\e88a";
+}
+
+.icon-pen:before {
+  content: "\e901";
+}
+
 .icon-github:before {
     content: "\f113";
 }
@@ -111,6 +127,7 @@ h1, h2, h3, h4, h5 , h6 {
 h1, {
 
   font-size: 175%;
+  font-weight: $bold;
 
   @include media(769px) {
     font-size: 250%;
@@ -142,7 +159,11 @@ h6 {
 }
 
 p {
+  font-size: 80%;
   margin: 0 0 $small-spacing;
+  @include media(769px) {
+    font-size: 100%;
+  }
 }
 
 a {

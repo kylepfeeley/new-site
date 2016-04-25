@@ -1,0 +1,32 @@
+main.post-container {
+	height: 100vh;
+	background-color: $gray-dark;
+
+	h1 {
+		margin-top: -40px;
+	}
+
+	a {
+	  color: $gray-light;
+	  font-size: 150%;
+	  font-weight: $bold;
+
+	  &:active,
+	  &:focus,
+	  &:hover {
+	    color: darken($gray-light, 20%);
+	  }
+	}
+}
+
+body.post-layout {
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	main {
+		max-width: 800px;
+	}
+}

@@ -1,0 +1,61 @@
+main.you-better-work {
+	section.site {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 20px;
+		background-color: transparent;
+		color: $gray-light;
+		height: 100vh;
+
+		button {
+			box-shadow: 1px 1px 2px $blue-darker;
+			text-shadow: 1px 1px 2px $blue-darker;
+		}
+
+		h2, h3, a, p {
+			color: $gray-light;
+			max-width: 800px;
+			text-shadow: 1px 1px 2px $blue-darker;
+		}
+
+		img {
+			height: auto;
+			max-width: 500px;
+			width: 100%;
+		}
+
+	  	@include media(max-height 650px) {
+			  	h2 {
+			  		font-size: 125%;
+			  	}
+
+			  	h3 {
+			  		font-size: 100%
+			  	}
+
+			  	img {
+			  		max-width: 400px;
+			  	}
+
+			  	p {
+			  		font-size: 75%;
+			  	}
+		  }
+	}
+
+	section.additional {
+
+		text-align: center;
+
+		button {
+			color: $medium-gray;
+			border-color: $medium-gray;
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+}

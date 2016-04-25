@@ -6,11 +6,20 @@ main.home {
 	  justify-content: center;
 	  padding: 0 20px;
 
-
 	  img {
 	  	height: auto;
 	  	max-width: 500px;
 	  	width: 100%;
+	  }
+
+	  @include media(max-height 650px) {
+	  	p, h2, h3 {
+			margin: 0;
+	  	}
+
+	  	img {
+	  		max-width: 400px;
+	  	}
 	  }
 	}
 
@@ -18,20 +27,6 @@ main.home {
 		background-color: transparent;
 		color: $gray-light;
 		height: 100vh;
-
-		a {
-			display: block;
-
-			&:active,
-			&:focus,
-			&:hover {
-				button {
-					border-color: darken($gray-light, 15%);
-					color: darken($gray-light, 15%);
-				}
-			}
-		
-		}
 
 		button {
 			bottom: 30px;
@@ -73,19 +68,6 @@ main.home {
 		}
 	}
 
-	section.about {
-
-		height: 50vh;
-		max-width: 800px;
-		padding: 50px 20px;
-
-		p {
-			@include media(769px) {
-				font-size: 125%;
-			}
-		}
-	}
-
 	section.latest {
 		background-color: transparent;
 		color: $gray-light;
@@ -96,22 +78,26 @@ main.home {
 			text-shadow: 1px 1px 2px $blue-darker;
 		}
 
-		h2, h3, p {
-			margin: 0;
-		}
-
 		h2, h3, a, p {
 			color: $gray-light;
 			max-width: 800px;
 			text-shadow: 1px 1px 2px $blue-darker;
 		}
+
+		h3 {
+			margin: 0;
+		}
 	}
 
-	section.contact {
+	nav.contact {
+
+		padding-top: 15px;
+		@include clearfix;
 		li {
 			display: inline-block;
 			text-align: center;
 			width: 80px;
+			height: 80px;
 		}
 	}
 }
