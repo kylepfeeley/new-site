@@ -58,6 +58,8 @@ main.home {
 
 			a {
 				color: $gray-medium;
+				text-shadow: 1px 1px 2px $gray-darker;
+
 
 				&:active,
 				&:focus,
@@ -90,6 +92,9 @@ main.home {
 	}
 
 	nav.contact {
+
+		text-align: center;
+		color: $blue;
 
 		padding-top: 15px;
 		@include clearfix;

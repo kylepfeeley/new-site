@@ -136,6 +136,7 @@ h1, {
 h2, {
 
   font-size: 150%;
+  font-weight: $bold;
 
   @include media(769px) {
     font-size: 200%;

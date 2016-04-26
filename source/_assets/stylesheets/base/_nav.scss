@@ -31,7 +31,7 @@ header {
   }
 }
 
-.page-layout header {
+.page-layout header, .post-layout header, .work-layout header {
   nav {
     ul {
       @include media(796px) {
@@ -40,11 +40,16 @@ header {
         top: 30px;
       }
     }
+  }
+}
 
+.page-layout header, .post-layout header {
     li {
       a {
         @include media(796px) {
-          color: $gray-light;
+          color: $gray-medium;
+          text-shadow: 1px 1px 2px $gray-darker;
+
           &:active,
           &:focus,
           &:hover {
@@ -54,10 +59,31 @@ header {
       }
     }
   }
-}
+
+
+.work-layout header {
+
+    li {
+      a {
+        @include media(796px) {
+          color: $gray-light;
+          text-shadow: 1px 1px 2px $gray-darker;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: darken($gray-light, 20%);
+          }
+        }
+      }
+    }
+  }
+
 
 footer {
 
+  color: $blue;
+  text-align: center;
   height: 80px;
   padding-top: 15px;
 

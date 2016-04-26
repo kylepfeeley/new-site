@@ -41,6 +41,8 @@ section.about, section.additional {
   padding: 50px 20px;
 
   p {
+    // IE 11 Flexbox fix
+    max-width: 800px;
     @include media(769px) {
       font-size: 125%;
     }

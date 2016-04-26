@@ -4,12 +4,14 @@ main.post-container {
 
 	h1 {
 		margin-top: -40px;
+		text-shadow: 1px 1px 2px $gray-darker;
 	}
 
 	a {
 	  color: $gray-light;
 	  font-size: 150%;
 	  font-weight: $bold;
+	  text-shadow: 1px 1px 2px $gray-darker;
 
 	  &:active,
 	  &:focus,
@@ -25,8 +27,51 @@ body.post-layout {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-color: $gray-dark;
+
+	article {
+		// IE 11 Flexbox fix
+		max-width: 800px;
+	}
 
 	main {
 		max-width: 800px;
+
+		a {
+		  color: $gray-light;
+		  font-weight: $bold;
+		  text-shadow: 1px 1px 2px $gray-darker;
+
+		  &:active,
+		  &:focus,
+		  &:hover {
+		    color: darken($gray-light, 20%);
+		  }
+		}
+
+		h2 {
+			width: 100%;
+			color: lighten($gray-medium, 15%);
+			text-shadow: 1px 1px 2px $gray-darker;
+		}
+
+		p {
+			color: lighten($gray-medium, 15%);
+			text-shadow: 1px 1px 2px $gray-darker;
+		}
+
+		@include media(796px) {
+			margin-top: 5em;
+		}
+	}
+
+	header, footer {
+		background-color: $gray-light;
+		width: 100%;
+	}
+
+	img {
+		height: auto;
+		width: 100%;
 	}
 }
