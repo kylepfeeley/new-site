@@ -1,15 +1,21 @@
 ---
-title:  Securitinet UX Design
+title:  Writewood UX Design/Dev
 date:   2016-04-23 12:00:00
 categories: work
 layout: post
 ---
 
 
-![Securitinet UX Design]({{ site.url }}/assets/images/securitinet-login.jpg)
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-1.jpg)
 
-![Securitinet UX Design]({{ site.url }}/assets/images/securitinet-landing-mockup.jpg)
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-2.jpg)
 
-![Securitinet UX Design]({{ site.url }}/assets/images/securitinet-transactions.jpg)
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-3.jpg)
 
-![Securitinet UX Design]({{ site.url }}/assets/images/securitinet-messages.jpg)
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-4.jpg)
+
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-5.jpg)
+
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-6.jpg)
+
+![Writewood UX Design]({{ site.url }}/assets/images/writewood-7.jpg)
