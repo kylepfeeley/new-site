@@ -84,21 +84,37 @@ footer {
 
   color: $blue;
   text-align: center;
-  height: 80px;
+  min-height: 80px;
   padding-top: 15px;
+  @include clearfix;
 
   nav {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      border-top: dashed 1px $blue-lightest;
+      padding-top: 10px;
+    }
 
     li {
       font-size: 80%;
       display: inline-block;
       text-align: center;
-      width: 60px;
+      height: 60px;
+      width: 40px;
+    }
+
+    @include media(796px) {
+      li {
+        width: 60px;
+      }
     }
   }
 }

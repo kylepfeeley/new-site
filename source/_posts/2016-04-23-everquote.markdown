@@ -5,10 +5,11 @@ categories: work
 layout: post
 ---
 
+['Everquote'][everquote] has been the most comprehensive and involved project of my career. Was hired as the first UX person and 3 years ago and built a department of 7 full-time employees including UX designers, graphic designers and front-end developers. In addition to the front-end responsibilities, I got the chance to name the company and come up with its logo. 
 
-['Everquote'][everquote] has been the most comprehensive and involved project of my career. Was hired as the first UX person and 3 years ago and built a department of 7 full-time employees including UX designers, graphic designers and front-end developers.
+![EverQuote Logo Sketches]({{ site.url }}/assets/images/everquote-logo.jpg)
 
-In addition to the front-end responsibilities, I got the chance to name the company and come up with its logo. Well, I say I came up with the company name. The truth is that while, technically that's true, I had a good start. We had inherited the domain myquote.com – which I'm not linking to because it's basically a clone of ['Everquote'][everquote] but the branding is not maintained.
+Well, I say I came up with the company name. The truth is that while, technically that's true, I had a good start. We had inherited the domain myquote.com – which I'm not linking to because it's basically a clone of ['Everquote'][everquote] but the branding is not maintained.
 
 Anyway, we already owned MyQuote.com. But, We had trouble obtaining the copyright to MyQuote and, long story short, me and my design team went over hundreds of different names with the founders and settled on one that I had adapted from MyQuote. That was EverQuote.
 
