@@ -9,16 +9,20 @@ button {
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: 125%;
   font-weight: $normal;
   line-height: 1;
   outline: none;
-  padding: 0.75em 1em;
   text-decoration: none;
   transition: color 0.1s linear;
   @include user-select(none);
   vertical-align: middle;
   white-space: nowrap;
+  padding: 0.5em 0.75em;
+
+  @include media(796px) {
+    font-size: 125%;
+    padding: 0.75em 1em;
+  }
 
   &:hover,
   &:focus {

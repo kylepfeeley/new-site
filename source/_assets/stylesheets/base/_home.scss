@@ -40,9 +40,12 @@ main.home {
 		button {
 			bottom: 30px;
 			box-shadow: 1px 1px 2px $gray-darker;
-			margin-left: -75px;
+			margin-left: -47px;
 			position: absolute;
 			text-shadow: 1px 1px 2px $gray-darker;
+			@include media(769px) {
+				margin-left: -75px;
+			}
 		}
 
 		ul {
