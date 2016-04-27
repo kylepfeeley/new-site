@@ -23,6 +23,15 @@ main.home {
 	  }
 	}
 
+	section.additional {
+		color: $gray-medium;
+
+		button {
+			color: $gray-medium;
+			border-color: $gray-medium;
+		}
+	}
+
 	section.intro {
 		background-color: transparent;
 		color: $gray-light;
