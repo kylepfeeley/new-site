@@ -28,9 +28,9 @@ layout: post
 
 We decided on a combination of 2 and 3. The client would use the logos with hardhats for the internal system fonts and a version of the logo without (in a different font) for the front-facing use of the logo.
 
-![QuarkSafe Logo Sketches]({{ site.url }}/assets/images/quarksafe-final-1.jpg)
+![QuarkSafe Logo Sketches]({{ site.url }}/assets/images/quarksafe-final.jpg)
 
-![QuarkSafe Logo Sketches]({{ site.url }}/assets/images/quarksafe-final-2.jpg)
+![QuarkSafe Logo Sketches]({{ site.url }}/assets/images/quarksafe-final-alt.jpg)
 
 
 

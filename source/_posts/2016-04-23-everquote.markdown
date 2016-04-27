@@ -12,7 +12,7 @@ In addition to the front-end responsibilities, I got the chance to name the comp
 
 Anyway, we already owned MyQuote.com. But, We had trouble obtaining the copyright to MyQuote and, long story short, me and my design team went over hundreds of different names with the founders and settled on one that I had adapted from MyQuote. That was EverQuote.
 
-The point of my telling you all of this is to explain what you're about to see. I'm going to show you a series of sketches (most of them are embarassing) to show you how I came up with the lgoo. Eventually I'll fill in the naration, but for the sake of getting this post up and published below follows a progression of images and a few loose notes.
+The point of my telling you all of this is to explain why you're seeing the logo development for MyQuote, because that was, ultimately, the development of the EverQuote logo. Below, are a series of sketches (most of them are embarassing) to show the progression. Eventually, I'll fill in the naration. But, for the sake of getting this post up and published, we start here with a few terrible logo sketches.
 
 ![MyQuote Logo Sketches]({{ site.url }}/assets/images/myquote-1.jpg)
 
