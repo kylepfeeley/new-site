@@ -21,4 +21,10 @@ $(function() {
 	  var dataInfo = $(this).data("tooltip");
 	  $( this ).append('<span class="inner" >' + dataInfo + '</span>');
 	});
+
+	//FadeIn
+
+	$(document).ready(function(){
+		$('.home-container').fadeIn(2000);
+	});
 });
